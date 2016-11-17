@@ -31,6 +31,8 @@ gulp.task('styl', function() {
       browsers: ['last 3 versions'],
       cascade: false
     }))
+    .pipe(plugins.cssnano())
+    .pipe(plugins.rename({suffix: '.min'}))
     .pipe(gulp.dest(publicDir));
 });
 
@@ -46,6 +48,7 @@ gulp.task('js', () => {
   }))
   .pipe(named())
   .pipe(webpack(require('./webpack.config.js')))
+  .pipe(plugins.rename({suffix: '.min'}))
   .pipe(gulp.dest(publicDir));
 });
 

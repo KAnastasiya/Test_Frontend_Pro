@@ -1,8 +1,6 @@
 const webpack = require('webpack');
 
 module.exports = {
-  devtool: 'inline-source-map',
-
   module: {
     loaders: [{
       test: /\.jsx?$/,
@@ -15,6 +13,15 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+        drop_console: true,
+        drop_debugger: true,
+        unused: true,
+        collapse_vars: true,
+      }
+    })
   ]
 };
