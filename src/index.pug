@@ -1,0 +1,20 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Пробный тест (Hillel IT School)
+    link(href='img/favicon.png', type='image/png', rel='icon')
+    link(href='style.css', rel='stylesheet')
+
+  body
+    .page-wrapper
+      include blocks/page-header/page-header
+      main.main
+        aside.sidenav
+          include blocks/page-nav/page-nav
+          include blocks/copyright/copyright
+        include blocks/content/content
+
+    script(src='script.js')

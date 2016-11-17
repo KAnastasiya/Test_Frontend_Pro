@@ -1,0 +1,27 @@
+.page-nav
+  &__list
+    list-style none
+    padding 0
+    margin -1px 0 0
+
+  &__item
+    &:not(:first-of-type)
+      margin -1px 0 0 -1px
+
+  &__link
+    display block
+    padding 10px
+    border border-params
+    background-color sidebar-bg
+
+    font-size 32px
+    color font-color
+    text-decoration none
+    line-height 1.4
+
+    &.page-nav__link_active
+      border-right none
+      background-color content-bg
+
+    &:not(.page-nav__link_active):hover
+      opacity 0.5

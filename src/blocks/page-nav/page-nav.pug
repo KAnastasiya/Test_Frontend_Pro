@@ -1,0 +1,5 @@
+nav.page-nav
+  ul.page-nav__list
+    - for(var i = 1; i < 8; i++)
+      li.page-nav__item
+        a(class='page-nav__link page-nav__link_' + i, data-index=i, href='#')= 'item ' + i

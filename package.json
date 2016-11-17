@@ -1,0 +1,33 @@
+{
+  "name": "Test_Frontend_Pro(Hillel)",
+  "author": "Anastasiia Kozenko",
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "browser-sync": "*",
+    "del": "^*",
+    "eslint": "*",
+    "eslint-loader": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-load-plugins": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-pug": "*",
+    "gulp-rename": "*",
+    "gulp-stylus": "*",
+    "gulp-sync": "*",
+    "gulp-imagemin": "*",
+    "imagemin-jpeg-recompress": "*",
+    "imagemin-pngquant": "*",
+    "normalize.css": "*",
+    "vinyl-named": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*",
+    "webpack-hot-middleware": "*",
+    "webpack-stream": "*"
+  }
+}

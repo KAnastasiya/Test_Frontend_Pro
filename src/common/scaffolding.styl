@@ -1,0 +1,37 @@
+.page-wrapper
+  max-width wrapper-width
+  margin 0 auto
+
+  font font-params
+  color font-color
+
+  *
+    box-sizing border-box
+
+.main
+  display flex
+  flex-flow row nowrap
+  justify-content flex-start
+  align-items stretch
+
+  border border-params
+  margin-bottom 40px
+  position relative
+
+  &::after
+    content ''
+    width 64px
+    height 64px
+    background url('../../img/box.png') no-repeat center
+    background-size contain
+
+    position absolute
+    top -35px
+    right -35px
+
+.sidenav
+  flex 0 0 sidebar-width
+  background-color sidebar-bg
+
+  display flex
+  flex-flow column nowrap
